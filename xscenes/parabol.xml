@@ -21,7 +21,7 @@ direction="0 0 1" radius="20" color="0 0 1" />
 direction="0 1 0" radius="20" color="1 0 0" />
 
 
-<Light position="30 0 60" intensity="2" color="1.0 1.0 1.0"/>
+<Light position="30 0 60" intensity="0.8" color="1.0 1.0 1.0"/>
 
 
 

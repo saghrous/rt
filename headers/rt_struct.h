@@ -16,6 +16,12 @@
 /*
  * Structures
  */
+typedef struct	s_delt
+{
+	double	a;
+	double	b;
+	double	c;
+}				t_delt;
 
 typedef struct	s_ray
 {

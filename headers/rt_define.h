@@ -2,6 +2,8 @@
 
 #ifndef RT_DEFINE_H
 # define RT_DEFINE_H
+# define TR_MIN 0.0001
+# define TR_MAX 1.0e30f
 
 /*
  * Macros

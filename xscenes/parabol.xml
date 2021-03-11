@@ -11,7 +11,7 @@
 
 
 
-<Object name="parabol" radius="3.0"  direction="1.0 1.0 0.0" position="0 0 0"
+<Object name="parabol" radius="1.5"  direction="1.0 1.0 0.0" position="0 0 0"
 rotation="00 0 00"   color= "0 1.0 1.0"/>
 
 <Object name="plan" position="0 0 -100" rotation="0 0 0"

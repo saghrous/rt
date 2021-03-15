@@ -67,13 +67,8 @@ double	pnoise(double x, double y, double z)
 
 t_vec	perlin(t_hit *rec)
 {
-	double	n;
-    t_vec color;
+	int filter = 2;
+		rec->col = filters(rec->col, filter);
 
-	n = pnoise(rec->p.x, rec->p.y, rec->p.z);
-	n = n - floor(n);
-	color.x= n;
-	color.y = n;
-	color.z = n;
-    return color;
+	return rec->col;
 }

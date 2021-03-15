@@ -46,6 +46,7 @@ SRCS = rt.c\
 		rt_negatives.c\
 		rt_slicing.c\
 		perlin.c\
+		filters.c\
 		
 
 

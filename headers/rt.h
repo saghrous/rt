@@ -186,7 +186,7 @@ void	rt_init_negative(t_hit *rec);
 int			rt_slicing(t_object *o, t_ray *r, t_hit *rec);
 int		    in_cylindr(t_object *o);
 int		    in_sphere(t_object *o);
-
 t_vec	perlin(t_hit *rec);
+t_vec	filters(t_vec color, int filter);
 
 #endif

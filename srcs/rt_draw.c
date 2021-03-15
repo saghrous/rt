@@ -23,6 +23,8 @@ t_vec rt_raytracer(t_thread *th, t_ray r, int depth)
 	color = vec3(0.0);
 	if (rt_hit(th->rt->scene, &r, &rec, MAX))
 	{
+		
+		
 		o = rec.curr_obj;	
 		if (o->txt.is_txt == 1)
 			rec.col = rt_get_color_from_texture(o, &rec.u, &rec.v);
@@ -39,7 +41,10 @@ t_vec rt_raytracer(t_thread *th, t_ray r, int depth)
 			color = vec_add(color, (o->refr) ?  (rt_raytracer(th,\
 			rt_refraction(th->rec, r, o), depth - 1)) : vec3(0.0));
 		}
+		int filter = 1;
+		filters(color, filter);
 	}
+	
 	rt_adjustment(&color);
 	return (color);
 }
